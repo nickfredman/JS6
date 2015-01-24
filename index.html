@@ -2,12 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Untitled</title>
+  <title>JS6</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	
+    <!-- Update Area -->
+	<div class="updater">
+        <form class="profile-form">
+            <h2>Update Your Profile</h2>
+            <label>Name:</label>
+            <input id="name" type="text" name="name" placeholder="John Smith"><br>
+            <label>Bio:</label>
+            <input id="bio" type="text" name="bio" placeholder="I'm an awesome dude from Boulder, CO. I like walks and runs, and I eat, and sleep javascript."><br>
+            <label>Fave Books:</label>
+            <input id="books" type="text" name="books" placeholder="Essential Javascript, Lord of the rings, Harry Potter, Pickaxe, Don't make me think"><br>
+            <section class="libraries">
+                <label class="lib">Fave Jscript Libraries:</label><br>
+                jQuery: <input type="checkbox" name="jQuery" value="jQuery">
+                Angular: <input type="checkbox" name="angular" value="angular">
+                Backbone: <input type="checkbox" name="backbone" value="backbone"><br>
+                Ember: <input type="checkbox" name="ember" value="ember">
+                Jasmine: <input type="checkbox" name="jasmine" value="jasmine">
+                Knockout: <input type="checkbox" name="knockout" value="knockout"><br>
+                Underscore: <input type="checkbox" name="underscore" value="underscore"><br>
+            </section>
+            <button class="submit">Submit Changes</button>
+        </form>
+    </div>
+
+    <!-- Profile Update -->
+
+    <div class="profile">
+        <h2>Your Profile</h2>
+        <p>Name:</p><p class="name">Name</p><br>
+        <p>Bio:</p><p class="bio">Bio</p><br>
+        <p>Fave Books:</p><p class="books">Books</p><br>
+        <p>Fave Jscript Libraries:</p><p class="library">Libraries</p>
+        <button class="update">Update</button>
+    </div>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="main.js"></script>
 
